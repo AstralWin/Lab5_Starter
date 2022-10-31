@@ -16,6 +16,7 @@ function init() {
   console.log(tap);
   console.log(volimg);
   
+  audio.volume = volu.value / 100;
   horn.addEventListener('input', () => {
     if (horn.value == "air-horn") {
       image.src = "assets/images/air-horn.svg";
